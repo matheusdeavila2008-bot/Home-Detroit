@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de Agendamentos</title>
+  <link rel="stylesheet" href="admstyle.css">
+</head>
+
+<body>
+  <header>
+    <h1>PAINEL DE AGENDAMENTOS</h1>
+    <p>Gerencie seus clientes e horários reservados</p>
+  </header>
+
+  <section class="form-section">
+    <h2>NOVO AGENDAMENTOS</h2>
+    <form>
+      <input type="text" placeholder="Nome do Cliente" required>
+      <input type="tel" placeholder="Telefone" required>
+
+      <select required>
+        <option value="vanilson">Barbeiro</option>
+        <option value="vanilson">Bernardo</option>
+        <option value="telma">Bruno</option>
+        <option value="carlos">Luan</option>
+        <option value="joão">Renan</option>
+        <option value="pedro">Telma</option>
+        <option value="pedro">Vanilson</option>
+      </select>
+
+      <select required>
+        <option value="">Selecione o serviço</option>
+        <option value="americano">A. AMERICANO</option>
+        <option value="corte Máquina/Pente">CORTE MÁQUINA/PENTE</option>
+        <option value="corte Máquina/Tesoura">CORTE MÁQUINA/TESOURA</option>
+        <option value="corte Tesoura">CORTE TESOURA</option>
+        <option value="depilação Nasal">DEPILAÇÃO NASAL</option>
+        <option value="depilação Orelha">DEPILAÇÃO ORELHA</option>
+        <option value="escova">ESCOVA</option>
+        <option value="freestyle">FREESTYLE</option>
+        <option value="hidratação">HIDRATAÇÃO</option>
+        <option value="hidratação Barba">HIDRATAÇÃO BARBA</option>
+        <option value="lavagem Cabelo">LAVAGEM CABELO</option>
+        <option value="luzes">LUZES</option>
+        <option value="matização">MATIZAÇÃO</option>
+        <option value="navalhado">NAVALHADO</option>
+        <option value="pezinho">PEZINHO</option>
+        <option value="pigmentação">PIGMENTAÇÃO</option>
+        <option value="platinado">PLATINADO</option>
+        <option value="preenchimento Barba">PREENCHIMENTO BARBA</option>
+        <option value="progressiva">PROGRESSIVA</option>
+        <option value="scalp Clear">SCALP’CLEAR</option>
+        <option value="selagem">SELAGEM</option>
+        <option value="selagem Barba">SELAGEM BARBA</option>
+        <option value="sobrancelha">SOBRANCELHA</option>
+        <option value="terapia Cone Hindu">TERAPIA CONE HINDU</option>
+        <option value="terapia Facial">TERAPIA FACIAL</option>
+      </select>
+
+      <imput type="date" required>
+      <imput type="time" required>
+      <button type="submit">Adicionar</button>
+    </form>
+  </section>
+
+ 
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>Cliente</th>
+          <th>Telefone</th>
+          <th>Serviço</th>
+          <th>Profissional</th>
+          <th>Data</th>
+          <th>Hora</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="cliente">Matheus</td>
+          <td data-label="telefone">(62) 99773-5469</td>
+          <td data-label="serviço">Corte Máquina</td>
+          <td data-label="profissional">Vanilson</td>
+          <td data-label="data">13/10/2025</td>
+          <td data-label="hora">09:00</td>
+          <td data-label="ações">
+            <button class="btn btn-edit">Editar</button>
+            <button class="btn btn-delete">Excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td data-label="cliente">Lucas</td>
+          <td data-label="telefone">(62) 99123-4567</td>
+          <td data-label="serviço">Barba</td>
+          <td data-label="profissional">Carlos</td>
+          <td data-label="data">15/10/2025</td>
+          <td data-label="hora">14:30</td>
+          <td data-label="ações">
+            <button class="btn btn-edit">Editar</button>
+            <button class="btn btn-delete">Excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <div class="botao-container">
+    <a href="/home/index.html" class="botao-link">VOLTAR</a>
+  </div>
+
+
+  <footer>
+    <p> BARBEARIA DETROIT 2025
+      &copy; todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
